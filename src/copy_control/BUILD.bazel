@@ -1,5 +1,18 @@
+package(
+     default_visibility = ["//visibility:public"]
+)
+
 cc_binary(
     name = "copy_constructor",
     srcs = ["copy_constructor.cc"],
-    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "copy_assignment",
+    srcs = ["copy_assignment.cc"],
+)
+
+cc_binary(
+    name = "shallow_copy",
+    srcs = ["cp_cst_default_shallow_issur.cc"],
 )
