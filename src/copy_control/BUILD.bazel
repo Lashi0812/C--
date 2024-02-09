@@ -16,3 +16,8 @@ cc_binary(
     name = "shallow_copy",
     srcs = ["cp_cst_default_shallow_issur.cc"],
 )
+
+cc_binary(
+    name = "destructor",
+    srcs = ["destructor.cc"],
+)
