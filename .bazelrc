@@ -1,0 +1,7 @@
+common --experimental_repo_remote_exec
+
+build --copt=-fvisibility=hidden
+build --copt=-Wno-sign-compare
+build --cxxopt=-std=c++17
+build --host_cxxopt=-std=c++17
+build --repo_env=CC=clang
