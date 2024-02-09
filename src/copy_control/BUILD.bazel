@@ -1,0 +1,5 @@
+cc_binary(
+    name = "copy_initialization",
+    srcs = ["copy_initialization.cc"],
+    visibility = ["//visibility:public"],
+)
