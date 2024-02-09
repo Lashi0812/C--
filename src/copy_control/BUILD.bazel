@@ -1,5 +1,5 @@
 cc_binary(
-    name = "copy_initialization",
-    srcs = ["copy_initialization.cc"],
+    name = "copy_constructor",
+    srcs = ["copy_constructor.cc"],
     visibility = ["//visibility:public"],
 )

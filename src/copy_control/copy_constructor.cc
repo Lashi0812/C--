@@ -14,9 +14,18 @@ private:
   int magic_number = 0;
 };
 
+Foo global;
 Foo passingFooAndReturnFoo(Foo other) {
+  std::cout << "Local Copy : ";
+  Foo local = other;
+  std::cout << "Creating Foo Pointer : ";
+  Foo *heap = new Foo(global);
+  std::cout << "Assigning Foo to Foo Pointer : \n";
+  *heap = local;
+  std::cout << "Creating the Foo Array : ";
+  Foo fooArray[4] = {local, *heap};
   std::cout << "Returning the Foo : ";
-  return other;
+  return *heap;
 }
 
 class AggregateClass {
