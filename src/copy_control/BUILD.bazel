@@ -21,3 +21,8 @@ cc_binary(
     name = "destructor",
     srcs = ["destructor.cc"],
 )
+
+cc_binary(
+    name = "dest_pit_fall_ref",
+    srcs = ["destructor_pit_fall_ref_out_scope.cc"],
+)
