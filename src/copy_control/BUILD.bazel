@@ -31,3 +31,8 @@ cc_binary(
     name = "class_like_value",
     srcs = ["class_like_value.cc"],
 )
+
+cc_binary(
+    name = "pointer_ref_count",
+    srcs = ["class_like_pointer_manual_ref_count.cc"],
+)
