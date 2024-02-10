@@ -36,3 +36,8 @@ cc_binary(
     name = "pointer_ref_count",
     srcs = ["class_like_pointer_manual_ref_count.cc"],
 )
+
+cc_binary(
+    name = "copy_control_for_dma",
+    srcs = ["dynamic_allocate_memory.cc"],
+)
