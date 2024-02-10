@@ -26,3 +26,8 @@ cc_binary(
     name = "dest_pit_fall_ref",
     srcs = ["destructor_pit_fall_ref_out_scope.cc"],
 )
+
+cc_binary(
+    name = "class_like_value",
+    srcs = ["class_like_value.cc"],
+)
