@@ -1,0 +1,15 @@
+package(
+    default_visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "hello_world_in_cpp",
+    srcs = ["hello_world.cc"],
+)
+
+
+py_binary(
+    name = "hello_world_in_py",
+    srcs = ["hello_world.py"],
+    main = "hello_world.py",
+)
