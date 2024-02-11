@@ -4,12 +4,12 @@ package(
 
 cc_binary(
     name = "hello_world_in_cpp",
-    srcs = ["hello_world.cc"],
+    srcs = ["//src/concurrency/hello_world:hello_world.cc"],
 )
 
 
 py_binary(
     name = "hello_world_in_py",
-    srcs = ["hello_world.py"],
+    srcs = ["//src/concurrency/hello_world:hello_world.py"],
     main = "hello_world.py",
 )
