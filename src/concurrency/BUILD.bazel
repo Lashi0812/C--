@@ -24,3 +24,15 @@ py_binary(
     srcs = ["//src/concurrency/any_callable:any_callable.py"],
     main = "any_callable.py",
 )
+
+
+cc_binary(
+    name = "detach_in_cpp",
+    srcs = ["//src/concurrency/detach:detach.cc"],
+)
+
+py_binary(
+    name = "detach_in_py",
+    srcs = ["//src/concurrency/detach:detach.py"],
+    main = "detach.py",
+)
