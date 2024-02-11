@@ -36,3 +36,8 @@ py_binary(
     srcs = ["//src/concurrency/detach:detach.py"],
     main = "detach.py",
 )
+
+cc_binary(
+    name = "exception_in_cpp",
+    srcs = ["//src/concurrency/exception:exception.cc"],
+)
