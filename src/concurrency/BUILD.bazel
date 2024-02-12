@@ -7,7 +7,6 @@ cc_binary(
     srcs = ["//src/concurrency/hello_world:hello_world.cc"],
 )
 
-
 py_binary(
     name = "hello_world_in_py",
     srcs = ["//src/concurrency/hello_world:hello_world.py"],
@@ -24,7 +23,6 @@ py_binary(
     srcs = ["//src/concurrency/any_callable:any_callable.py"],
     main = "any_callable.py",
 )
-
 
 cc_binary(
     name = "detach_in_cpp",
@@ -45,4 +43,9 @@ cc_binary(
 cc_binary(
     name = "raii_in_cpp",
     srcs = ["//src/concurrency/RAII:raii.cc"],
+)
+
+cc_binary(
+    name = "passing_args",
+    srcs = ["//src/concurrency/passing_arguments:passing_arguments.cc"],
 )
