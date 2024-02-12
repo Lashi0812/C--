@@ -84,3 +84,8 @@ cc_binary(
     name = "big_hole_with_passing_func",
     srcs = ["//src/concurrency/big_hole:passing_func.cc"],
 )
+
+cc_binary(
+    name = "two_lock_same_time",
+    srcs = ["//src/concurrency/deadlock:two_lock_same_time.cc"],
+)
