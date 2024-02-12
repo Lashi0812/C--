@@ -70,3 +70,8 @@ cc_binary(
     name = "thread_id",
     srcs = ["//src/concurrency/thread_id:thread_id.cc"],
 )
+
+cc_binary(
+    name = "mutex_with_guard",
+    srcs = ["//src/concurrency/mutex:mutex.cc"],
+)
