@@ -49,3 +49,9 @@ cc_binary(
     name = "passing_args",
     srcs = ["//src/concurrency/passing_arguments:passing_arguments.cc"],
 )
+
+
+cc_binary(
+    name = "return_thread",
+    srcs = ["//src/concurrency/return_thread:return_thread.cc"],
+)
