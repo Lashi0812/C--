@@ -1,1 +1,4 @@
-exports_files(["passing_pointer.cc"])
+exports_files([
+    "passing_pointer.cc",
+    "passing_func.cc",
+])

@@ -65,7 +65,6 @@ cc_binary(
     srcs = ["//src/concurrency/hardware_concurrency:hardware_concurrency.cc"],
 )
 
-
 cc_binary(
     name = "thread_id",
     srcs = ["//src/concurrency/thread_id:thread_id.cc"],
@@ -76,8 +75,12 @@ cc_binary(
     srcs = ["//src/concurrency/mutex:mutex.cc"],
 )
 
-
 cc_binary(
     name = "big_hole_with_returning_pointer",
     srcs = ["//src/concurrency/big_hole:passing_pointer.cc"],
+)
+
+cc_binary(
+    name = "big_hole_with_passing_func",
+    srcs = ["//src/concurrency/big_hole:passing_func.cc"],
 )
