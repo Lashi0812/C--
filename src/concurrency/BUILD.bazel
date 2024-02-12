@@ -75,3 +75,9 @@ cc_binary(
     name = "mutex_with_guard",
     srcs = ["//src/concurrency/mutex:mutex.cc"],
 )
+
+
+cc_binary(
+    name = "big_hole_with_returning_pointer",
+    srcs = ["//src/concurrency/big_hole:passing_pointer.cc"],
+)
