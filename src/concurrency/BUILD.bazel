@@ -55,3 +55,8 @@ cc_binary(
     name = "return_thread",
     srcs = ["//src/concurrency/return_thread:return_thread.cc"],
 )
+
+cc_binary(
+    name = "spawn_thread",
+    srcs = ["//src/concurrency/spawn_n_wait:spawn_and_wait.cc"],
+)
